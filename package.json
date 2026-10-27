@@ -1,0 +1,32 @@
+{
+  "name": "cube-flow",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:pages": "tsc -b && vite build --base=/magic-cube-learning/",
+    "test:animation": "node scripts/check-cube-animation.mjs",
+    "test:notation": "node scripts/check-notation.mjs",
+    "test:timing": "node scripts/check-timing.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@moishy/algsets": "^0.3.3",
+    "@moishy/cubing-core": "^0.3.3",
+    "@vitejs/plugin-react": "latest",
+    "cubing": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "three": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "typescript": "latest",
+    "vite": "latest"
+  }
+}
